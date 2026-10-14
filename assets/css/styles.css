@@ -376,8 +376,8 @@ textarea:focus-visible {
   flex-direction: column;
   gap: 0.75rem;
   min-height: 100%;
-  flex: 1 1 300px;
-  max-width: 350px;
+  flex: 1 1 240px;
+  max-width: 260px;
 }
 .product-card:hover { border-color: #3a3a3a; }
 .product-art {
