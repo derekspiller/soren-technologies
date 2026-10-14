@@ -396,44 +396,6 @@ textarea:focus-visible {
 .product-card h3 { font-size: 1.2rem; }
 .product-card p { font-size: 0.93rem; flex: 1; }
 
-/* Capabilities */
-.capabilities { background: var(--bg); }
-.capabilities-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 2.5rem;
-  align-items: start;
-}
-.lead {
-  font-size: 1.15rem;
-  color: #c9c5bb;
-  margin-bottom: 1rem;
-}
-.capability-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 1rem;
-}
-.capability-list li {
-  padding: 1rem 1.1rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg-elevated);
-  display: grid;
-  gap: 0.25rem;
-}
-.capability-list strong {
-  color: var(--text);
-  font-family: "Antic Slab", Georgia, serif;
-  font-weight: 400;
-  font-size: 1.1rem;
-}
-.capability-list span {
-  color: var(--text-muted);
-  font-size: 0.93rem;
-}
 
 /* Contact */
 .contact { background: #101010; border-top: 1px solid var(--border-soft); }
@@ -519,18 +481,12 @@ textarea:focus-visible {
   justify-content: space-between;
   gap: 1rem;
 }
-.footer-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  font-family: "Antic Slab", Georgia, serif;
-  color: var(--text);
-}
-.footer-brand img { width: 24px; height: auto; }
 .footer-copy {
   margin: 0;
+  margin-right: auto;
   font-size: 0.88rem;
   color: #6f6b62;
+  text-align: left;
 }
 .footer-nav {
   display: flex;
@@ -547,7 +503,6 @@ textarea:focus-visible {
 @media (max-width: 960px) {
   .platform-grid { grid-template-columns: repeat(2, 1fr); }
   .product-card { max-width: calc(50% - 0.7rem); }
-  .capabilities-grid,
   .contact-grid { grid-template-columns: 1fr; }
 }
 
