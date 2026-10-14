@@ -461,9 +461,11 @@ textarea:focus-visible {
 }
 .contact-grid {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
   align-items: start;
+  justify-items: center;
+  width: 100%;
 }
 .contact-label {
   font-size: 0.75rem;
@@ -610,10 +612,41 @@ textarea:focus-visible {
   .brand-name { font-size: 1rem; }
 }
 
-.contact-grid--form-only {
-  grid-template-columns: 1fr;
+.contact .contact-grid.contact-grid--form-only {
+  display: grid;
+  grid-template-columns: minmax(0, 36rem);
+  justify-content: center;
+  justify-items: stretch;
   width: 100%;
   max-width: 36rem;
-  margin: 0 auto;
-  justify-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact .contact-form {
+  width: 100%;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.contact .section-header--center {
+  width: 100%;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.contact .section-header--center .eyebrow,
+.contact .section-header--center h2,
+.contact .section-header--center .section-lede {
+  text-align: center;
+}
+.contact .contact-inner {
+  width: 100%;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
